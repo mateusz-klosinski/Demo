@@ -1,28 +1,45 @@
-<div id="product-top">
-  <app-product-carousel></app-product-carousel>
-  <app-product-summary></app-product-summary>
-</div>
-<div id="product-bottom">
-  <app-product-details></app-product-details>
-</div>
+<section class="product">
+  <div class="product-top">
+    <app-product-carousel [images]="product?.imageUrls"></app-product-carousel>
+    <app-product-summary [product]="product"></app-product-summary>
+  </div>
 
-<div id="reviews">
+  <div class="product-bottom">
+    <app-product-details [details]="product?.details">
+      <div class="description">
+        <span>
+          So light and comfy, you'll love the Radiant Tee's organic fabric, feel, performance and style.
+          You may never want to stop moving in this shirt.
+        </span>
+        <ul>
+          <li>Salmon soft scoop neck tee.</li>
+          <li>Athletic, semi-form fit</li>
+          <li>Flat seams prevent chafing.</li>
+          <li>67% Organic Cotton / 28% Hemp / 5% Spandex</li>
+        </ul>
+      </div>
+    </app-product-details>
+  </div>
+</section>
+
+<section class="reviews">
   <app-review-list [reviews]="reviews"></app-review-list>
   <app-review-form></app-review-form>
-</div>
+</section>
 
-<app-product-list 
-  title="We found other products you might like" 
-  [products]="ohterProductPropsals">
-</app-product-list>
+<section class="other-product-proposals">
+  <app-product-preview-list title="We found other products you might like" [products]="ohterProductPropsals">
+  </app-product-preview-list>
+</section>
 
-<app-banner backgroundUrl="/assets/images/baner-img.png">
-  <span class="title-small">SALES</span>
-  <span class="title-big">Eco-friendly</span>
-</app-banner>
+<section class="banner">
+  <app-banner backgroundUrl="/assets/images/baner-img.png">
+    <span class="title-small">SALES</span>
+    <span class="title-big">Eco-friendly</span>
+  </app-banner>
+</section>
 
-<app-product-list 
-  title="Similar products" 
-  [products]="similarProducts">
-</app-product-list>
-
+<section class="similar-products">
+  <app-product-preview-list title="Similar products" [products]="similarProducts">
+  </app-product-preview-list>
+</section>

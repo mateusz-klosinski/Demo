@@ -1,3 +1,6 @@
-<p>
-  product-preview-list works!
-</p>
+<div class="product-preview-list">
+  <p class="preview-list-title">{{title}}</p>
+  <ng-container *ngFor="let product of products">
+    <app-product-preview [product]="product"></app-product-preview>
+  </ng-container>
+</div>

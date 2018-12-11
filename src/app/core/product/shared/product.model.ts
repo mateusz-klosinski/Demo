@@ -1,11 +1,11 @@
-import { ProductColor } from "./product-color.model";
+import { ProductDetails } from "./product-details.model";
 
 export interface Product {
     imageUrls: string[],
     code: string,
     name: string,
     price: number,
-    availableColors: ProductColor[],
+    availableColors: string[],
     availableSizes: string[],
-    
+    details: ProductDetails,
 }

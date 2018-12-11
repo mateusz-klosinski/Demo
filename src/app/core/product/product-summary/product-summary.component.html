@@ -1,3 +1,19 @@
-<p>
-  product-summary works!
-</p>
+<p class="product-name">{{product.name}}</p>
+<p class="product-code">{{product.code}}</p>
+<p class="product-price">{{product.price}}</p>
+
+<div class="color-picker">
+  Available colors: {{product.availableColors}}
+</div>
+
+<div class="size-picker">
+  Available sizes: {{product.availableSizes}}
+</div>
+
+<div class="quantity-picker">
+  Quantity: 1
+</div>
+
+<button class="add-to-cart">
+  Add to cart
+</button>

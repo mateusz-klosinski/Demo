@@ -1,3 +1,11 @@
-<p>
-  product-details works!
-</p>
+<div class="product-description">
+  <ng-content></ng-content>
+</div>
+<div class="product-details">
+  <ul>
+    <li>Material: <strong>{{details.material}}</strong></li>
+    <li>Style: <strong>{{details.styleGeneral}}</strong></li>
+    <li>Climate: <strong>{{details.climate}}</strong> </li>
+    <li>Pattern: <strong>{{details.pattern}}</strong></li>
+  </ul>
+</div>

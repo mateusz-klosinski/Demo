@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-product-carousel',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./product-carousel.component.scss']
 })
 export class ProductCarouselComponent implements OnInit {
+
+  @Input() images: string[];
 
   constructor() { }
 

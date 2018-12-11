@@ -1,3 +1,7 @@
-<p>
-  review-list works!
-</p>
+<ng-container *ngFor="let review of reviews">
+  <app-review [review]="review"></app-review>
+</ng-container>
+<ng-container *ngIf="!reviews.length">
+    No reviews have been posted yet. 
+    Please don't hesitate to share Your opinion and write the first review!
+</ng-container>

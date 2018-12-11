@@ -23,22 +23,24 @@ import { ProductCarouselComponent } from './product/product-carousel/product-car
     ReviewFormComponent, 
     ProductPreviewComponent, 
     ProductPreviewListComponent, 
-    BannerComponent, ProductCarouselComponent
+    BannerComponent, 
+    ProductCarouselComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
     TopbarComponent, 
-    FooterComponent,
+    FooterComponent, 
     ProductSummaryComponent, 
     ProductDetailsComponent, 
     ReviewComponent, 
     ReviewListComponent, 
     ReviewFormComponent, 
-    ProductPreviewComponent,
-    ProductPreviewListComponent,
-    BannerComponent
+    ProductPreviewComponent, 
+    ProductPreviewListComponent, 
+    BannerComponent, 
+    ProductCarouselComponent
   ]
 })
 export class CoreModule { }
