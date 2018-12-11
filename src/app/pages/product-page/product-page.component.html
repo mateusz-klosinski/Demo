@@ -1,0 +1,28 @@
+<div id="product-top">
+  <app-product-carousel></app-product-carousel>
+  <app-product-summary></app-product-summary>
+</div>
+<div id="product-bottom">
+  <app-product-details></app-product-details>
+</div>
+
+<div id="reviews">
+  <app-review-list [reviews]="reviews"></app-review-list>
+  <app-review-form></app-review-form>
+</div>
+
+<app-product-list 
+  title="We found other products you might like" 
+  [products]="ohterProductPropsals">
+</app-product-list>
+
+<app-banner backgroundUrl="/assets/images/baner-img.png">
+  <span class="title-small">SALES</span>
+  <span class="title-big">Eco-friendly</span>
+</app-banner>
+
+<app-product-list 
+  title="Similar products" 
+  [products]="similarProducts">
+</app-product-list>
+
